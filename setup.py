@@ -17,7 +17,7 @@ def read(fname):
 
 setup(
     name = 'pyminizip',
-    version = '0.2.6',
+    version = '0.3.0',
     description = 'A minizip wrapper - To create a password encrypted zip file in python.',
     author='Shin Aoyama',
     author_email = "smihica@gmail.com",
@@ -25,8 +25,7 @@ setup(
     download_url = "",
     keywords = ["zip", "file", "compress", "password", "encryption"],
     classifiers = [
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
+        "Programming Language :: Python",        
         "Programming Language :: Python :: 3",
         "Development Status :: 3 - Alpha",
         "Environment :: Other Environment",
