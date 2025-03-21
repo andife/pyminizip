@@ -15,14 +15,16 @@ jobs:
 
       # Used to host cibuildwheel
       - uses: actions/setup-python@v5
-
+        with:
+          python-version: '3.11'
+      
       - name: Install cibuildwheel
         run: python -m pip install cibuildwheel==2.23.1 #==2.11.2
 
       - name: Build wheels
         run: python -m cibuildwheel --output-dir wheelhouse        
         env:
-          CIBW_BUILD: "cp39-* cp310-* cp311-* cp312-* cp313-*"
+          CIBW_BUILD: "cp310-* cp311-* cp312-* cp313-*"
 
       - uses: actions/upload-artifact@v4
         with:
